@@ -285,14 +285,14 @@ get_header();
 
         <!-- for why-us section -->
         <?php
-    $news = new WP_Query(array(
-        'post_type' => 'news',
-        'posts_per_page' => 1,
+            $news = new WP_Query(array(
+                'post_type' => 'news',
+                'posts_per_page' => 1,
 
-    ));
-    if ($news->have_posts()) :
-    ?>
-            <div class="why-us-wrap">
+            ));
+            if ($news->have_posts()) :
+        ?>
+        <div class="why-us-wrap">
             <div class="why-us-container">
                 <div class="why-us-slider">
                 <?php
