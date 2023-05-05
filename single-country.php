@@ -60,28 +60,6 @@ get_header(); ?>
                                 </div>
                             </div>
                             <?php endwhile;?>
-                            <!-- <div class="blog-width-33">
-                                <div class="all-steps-content">
-                                    <div class="steps-img">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/travel-icon.svg" alt="icon">
-                                    </div>
-                                    <h6>Visa-Free Travel</h6>
-                                    <p>Successful applicants can freely
-                                        travel without a visa across all EU
-                                        member states.</p>
-                                </div>
-                            </div>
-                            <div class="blog-width-33">
-                                <div class="all-steps-content">
-                                    <div class="steps-img time-width">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/fast-icon.svg" alt="icon">
-                                    </div>
-                                    <h6>Fast Processing Time</h6>
-                                    <p>Successful applicants have their
-                                        applications processed within 2
-                                        months.</p>
-                                </div>
-                            </div> -->
                         </div>
                         <?php endif;?>
                     </div>
