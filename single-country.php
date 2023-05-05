@@ -60,28 +60,6 @@ get_header(); ?>
                                 </div>
                             </div>
                             <?php endwhile;?>
-                            <!-- <div class="blog-width-33">
-                                <div class="all-steps-content">
-                                    <div class="steps-img">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/travel-icon.svg" alt="icon">
-                                    </div>
-                                    <h6>Visa-Free Travel</h6>
-                                    <p>Successful applicants can freely
-                                        travel without a visa across all EU
-                                        member states.</p>
-                                </div>
-                            </div>
-                            <div class="blog-width-33">
-                                <div class="all-steps-content">
-                                    <div class="steps-img time-width">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/fast-icon.svg" alt="icon">
-                                    </div>
-                                    <h6>Fast Processing Time</h6>
-                                    <p>Successful applicants have their
-                                        applications processed within 2
-                                        months.</p>
-                                </div>
-                            </div> -->
                         </div>
                         <?php endif;?>
                     </div>
@@ -150,32 +128,6 @@ get_header(); ?>
                         </div>
                     </div>
                     <?php } }?>
-                    <!-- <div class="blog-width-50">
-                        <div class="procedure-wrap">
-                            <div class="procedure-heading">
-                                <h5>PROCEDURE</h5>
-                            </div>
-                            <ul class="procedure-list">
-                                <li>
-                                    <h3>QUALIFYING INVESTMENT</h3>
-                                    <p>Applicants must ﬁnalise their real estate investment in Cyprus before applying for Permanent Residence.</p>
-                                </li>
-                                <li>
-                                    <h3>APPLY FOR PERMANENT RESIDENCE IN  CYPRUS</h3>
-                                    <p>Applications must be submitted to the Civil
-                                        Registry and Migration Department. Letters of
-                                        approval are received within 2 months.</p>
-                                </li>
-                                <li>
-                                    <h3>VISIT THE ISLAND IN ORDER FOR THEIR
-                                        BIOMETRICS TO BE RECORDED</h3>
-                                    <p>All applicants must visit the island in order for their
-                                        biometrics to be recorded.
-                                        </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>

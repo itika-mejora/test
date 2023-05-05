@@ -77,12 +77,12 @@ get_header();
                         <?php endif;?>
                         <?php if (have_rows('service_listing')) : ?>
                         <ul class="service-listing">
-                        <?php while (have_rows('service_listing')) : the_row();
-                        $size = '26*21px';
-                        $service_image = get_sub_field('service_image');
-                        $service_name = get_sub_field('service_name');
-                        
-                        ?>
+                            <?php while (have_rows('service_listing')) : the_row();
+                            $size = '26*21px';
+                            $service_image = get_sub_field('service_image');
+                            $service_name = get_sub_field('service_name');
+                            
+                            ?>
                             <li><a href="#!"><strong><img src="<?php echo wp_get_attachment_image_url( $service_image, $size); ?>"></strong><?php echo $service_name;?></a></li>
                             
                             <?php endwhile;?>
@@ -92,12 +92,12 @@ get_header();
                 </div>
             </div>
             <?php if(get_field('service_back_image')) :
-            $size= 'full';
+                $size= 'full';
                 $service_back = get_field('service_back_image');
-                ?>
-            <div class="bg-img">
-                <img src="<?php echo wp_get_attachment_image_url( $service_back, $size); ?>" alt="service-img">
-            </div>
+            ?>
+                <div class="bg-img">
+                    <img src="<?php echo wp_get_attachment_image_url( $service_back, $size); ?>" alt="service-img">
+                </div>
             <?php endif;?>
         </div>
         <!-- end about-section -->
@@ -285,14 +285,14 @@ get_header();
 
         <!-- for why-us section -->
         <?php
-    $news = new WP_Query(array(
-        'post_type' => 'news',
-        'posts_per_page' => 1,
+            $news = new WP_Query(array(
+                'post_type' => 'news',
+                'posts_per_page' => 1,
 
-    ));
-    if ($news->have_posts()) :
-    ?>
-            <div class="why-us-wrap">
+            ));
+            if ($news->have_posts()) :
+        ?>
+        <div class="why-us-wrap">
             <div class="why-us-container">
                 <div class="why-us-slider">
                 <?php
