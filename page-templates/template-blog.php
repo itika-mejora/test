@@ -51,12 +51,14 @@ get_header();
                 <?php endif; ?>
                 <?php  wp_reset_query(); ?>
 
-                <?php if($wp_query->max_num_pages > 1 ): ?>
+               
                 <div class="load-more-btn">
-                <a href="javascript:void(0);" ><?php _e( 'LOAD MORE', 'text_domain' ); ?></a>
+                <a href="#!">
+                        LOAD MORE
+                    </a>
                     
                 </div>
-                <?php endif;?>
+                
             </div>
         </duv>
         <!-- end news section -->
