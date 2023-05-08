@@ -43,7 +43,7 @@ get_header();
                             <p><?php echo get_the_excerpt();?></p>
                         </div>
                         <div class="read-more">
-                            <a href="news-details.html">Read <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/arrow.svg" alt="icon"></a>
+                            <a href="<?php the_permalink(); ?>">Read <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/arrow.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -51,82 +51,10 @@ get_header();
                 <?php endif; ?>
                 <?php  wp_reset_query(); ?>
 
-                <!-- <div class="news-blog">
-                    <div class="news-left">
-                        <a href="news-details.html">
-                            <img src="<?php echo get_stylesheet_directory_uri();?>/images/news/news-2.jpg" alt="news-img">
-                        </a>
-                    </div>
-                    <div class="news-right">
-                        <strong class="date">23 Nov 2021</strong>
-                        <a href="news-details.html">
-                            <h5>Multinational Enterprises and Tax
-                                Administrations: <br> CYPRUS Intends to Espouse OECD
-                                Transfer Pricing Guidelines </h5>
-                        </a>
-                        <div class="news-content">
-                            <p>Cyprus is mulling the enabling of transfer pricing regulations in
-                                an environment rife with base erosion and profit shifting. Read
-                                on to find out about the proposed Transfer Pricing legislation of
-                                2021. </p>
-                        </div>
-                        <div class="read-more">
-                            <a href="news-details.html">Read <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/arrow.svg" alt="icon"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-blog">
-                    <div class="news-left">
-                        <a href="news-details.html">
-                            <img src="<?php echo get_stylesheet_directory_uri();?>/images/news/news.jpg" alt="news-img">
-                        </a>
-                    </div>
-                    <div class="news-right">
-                        <strong class="date">23 Nov 2021</strong>
-                        <a href="news-details.html">
-                            <h5>Multinational Enterprises and Tax
-                                Administrations: <br> CYPRUS Intends to Espouse OECD
-                                Transfer Pricing Guidelines </h5>
-                        </a>
-                        <div class="news-content">
-                            <p>Cyprus is mulling the enabling of transfer pricing regulations in
-                                an environment rife with base erosion and profit shifting. Read
-                                on to find out about the proposed Transfer Pricing legislation of
-                                2021. </p>
-                        </div>
-                        <div class="read-more">
-                            <a href="news-details.html">Read <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/arrow.svg" alt="icon"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-blog">
-                    <div class="news-left">
-                        <a href="news-details.html">
-                            <img src="<?php echo get_stylesheet_directory_uri();?>/images/news/news-2.jpg" alt="news-img">
-                        </a>
-                    </div>
-                    <div class="news-right">
-                        <strong class="date">23 Nov 2021</strong>
-                        <a href="news-details.html">
-                            <h5>Multinational Enterprises and Tax
-                                Administrations: <br> CYPRUS Intends to Espouse OECD
-                                Transfer Pricing Guidelines </h5>
-                        </a>
-                        <div class="news-content">
-                            <p>Cyprus is mulling the enabling of transfer pricing regulations in
-                                an environment rife with base erosion and profit shifting. Read
-                                on to find out about the proposed Transfer Pricing legislation of
-                                2021. </p>
-                        </div>
-                        <div class="read-more">
-                            <a href="news-details.html">Read <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/arrow.svg" alt="icon"></a>
-                        </div>
-                    </div>
-                </div> -->
+                <?php if($args->max_num_pages > 1 ): ?>
                 <div class="load-more-btn">
-                    <a href="#!">
-                        LOAD MORE
-                    </a>
+                <a href="javascript:void(0);" ><?php _e( 'LOAD MORE', 'text_domain' ); ?></a>
+                    
                 </div>
             </div>
         </duv>
