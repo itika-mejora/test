@@ -49,7 +49,7 @@ get_header();
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
-                <?php endif; wp_reset_query(); ?>
+                <?php  wp_reset_query(); ?>
 
                 <!-- <div class="news-blog">
                     <div class="news-left">
