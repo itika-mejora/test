@@ -30,13 +30,7 @@ get_header();
                             <div class="banner-content-blog">
                                 <h1><?php echo $banner_heading;?></h1>
                                 <strong><?php  echo $banner_subheading;?></strong>
-                                <h2>hello world</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Ullam, aperiam, 
-                                    facere quos unde porro, expedita 
-                                    excepturi sit vel ipsa eum soluta.
-                                     Fuga officiis cum repellat expedita
-                                      quasi labore dolorem sed?</p>
+                                
                             </div>
                 </div>
                 </div>
