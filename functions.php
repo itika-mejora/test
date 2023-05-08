@@ -30,7 +30,7 @@ function add_theme_scripts() {
         
         wp_enqueue_style( 'contact-style', get_template_directory_uri() . '/css/contact.min.css',false, null,'all');
         
-        wp_enqueue_style( 'contact-style', get_template_directory_uri() . 'css/contact.css',false, null,'all');
+        wp_enqueue_style( 'contact-style', get_template_directory_uri() . '/css/contact.css',false, null,'all');
         wp_enqueue_style( 'country-style', get_template_directory_uri() . '/css/country-select.min.css',false, null,'all');
         
         
