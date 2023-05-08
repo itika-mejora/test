@@ -71,17 +71,22 @@ get_header();
                     </div>
                     
                     <div id="share-box">
+                    <?php if ( is_active_sidebar( 'share-icon' )) : ?>
                         <button id="share-btn">
-                          <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/share.svg" alt="share-icon">
+                        <?php dynamic_sidebar( 'share-icon' ); ?>   
                         </button>
+                        <?php endif;?>
                       
                         <ul id="share-list">
+
+                        <?php if ( is_active_sidebar( 'share-article' )) : ?>
                           <li class="list-item">
                             <a class="list-item-link" href="#">
-                                <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/facebook.svg" alt="fb">
+                            <?php dynamic_sidebar( 'share-article' ); ?>  
                             </a>
                           </li>
-                          <li class="list-item">
+                          <?php endif;?>
+                          <!-- <li class="list-item">
                             <a class="list-item-link" href="#">
                                 <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/twitter.svg" alt="fb">
                             </a>
@@ -90,7 +95,7 @@ get_header();
                             <a class="list-item-link" href="#">
                                 <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/linkedin.svg" alt="fb">
                             </a>
-                          </li>
+                          </li> -->
                         </ul>
                         <div class="share-text">Share this article</div>
                     </div>
