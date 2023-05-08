@@ -18,7 +18,7 @@ get_header();
                 </div>
                 <div class="news-details-wrap">
                     <div class="news-img">
-                        <img src="images/news/news-details.jpg" alt="news-details">
+                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/news/news-details.jpg" alt="news-details">
                     </div>
                     <div class="news-name">
                         <strong class="date">23 Nov 2021</strong>
@@ -67,23 +67,23 @@ get_header();
                     </div>
                     <div id="share-box">
                         <button id="share-btn">
-                          <img src="images/icons/share.svg" alt="share-icon">
+                          <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/share.svg" alt="share-icon">
                         </button>
                       
                         <ul id="share-list">
                           <li class="list-item">
                             <a class="list-item-link" href="#">
-                                <img src="images/icons/facebook.svg" alt="fb">
+                                <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/facebook.svg" alt="fb">
                             </a>
                           </li>
                           <li class="list-item">
                             <a class="list-item-link" href="#">
-                                <img src="images/icons/twitter.svg" alt="fb">
+                                <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/twitter.svg" alt="fb">
                             </a>
                           </li>
                           <li class="list-item">
                             <a class="list-item-link" href="#">
-                                <img src="images/icons/linkedin.svg" alt="fb">
+                                <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/linkedin.svg" alt="fb">
                             </a>
                           </li>
                         </ul>
