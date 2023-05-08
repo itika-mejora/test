@@ -181,6 +181,20 @@ function replace_hash($menu_item) {
 }
 
 function theme_widgets_init() {
+    register_sidebar( array(
+        'name'          => 'Share icon',
+        'id'            => 'share-icon',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        
+    ) );
+    register_sidebar( array(
+        'name'          => 'Share Article',
+        'id'            => 'share-article',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        
+    ) );
 
     register_sidebar( array(
         'name'          => 'Custom Header Widget Area',
