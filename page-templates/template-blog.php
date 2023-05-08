@@ -19,15 +19,16 @@ get_header();
                     <h2><?php the_field('add_page_title' , 'option'); ?></h2>
                 </div>
                
-
-                <div class="news-blog">
-                <?php
+                  <?php
 					$args = array(
                    'post_type' => 'post',
                    'posts_per_page' => 4,);
                     query_posts($args);
                     if (have_posts()) : while (have_posts()) : the_post();
-                    $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'blog-thumb'); ?>
+                    $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'blog-thumb'); 
+                    ?>
+                <div class="news-blog">
+               
                     <div class="news-left">
                         <a href="<?php the_permalink(); ?>">
                         <img src="<?php echo $url[0];?>" alt="news-img">
@@ -48,8 +49,8 @@ get_header();
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
-                <?php wp_reset_query(); ?>
+                <?php endif; wp_reset_query(); ?>
+
                 <!-- <div class="news-blog">
                     <div class="news-left">
                         <a href="news-details.html">
