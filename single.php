@@ -11,22 +11,22 @@ get_header();
         <!-- end banner section -->
 
         <!-- news details section -->
-        
+        <?php if ( have_posts() ) : 
+					 while ( have_posts() ) : the_post(); 
+        $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'blog-thumb'); ?>
         <div class="news-details-section">
             <div class="container share-wrap">
                 <div class="back-btn">
-                    <a href="<?php echo get_permalink( "410" ); ?>">BACK TO NEWS</a>
+                    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">BACK TO NEWS</a>
                 </div>
                 <div class="news-details-wrap">
                     <div class="news-img">
-                        <img src="<?php the_post_thumbnail('full'); ?>" alt="news-details">
+                        <img src="<?php echo $url[0];?>" alt="news-details">
                     </div>
                     <div class="news-name">
                         <strong class="date"><?php the_time( 'd.m.Y' ); ?></strong>
                         <h1><?php the_title(); ?></h1>
                     </div>
-                    <?php if ( have_posts() ) : ?>
-					<?php while ( have_posts() ) : the_post(); ?>
                     <div class="news-content-text">
                     <?php the_content(); ?>
                         <!-- <p>Cyprus is mulling the enabling of transfer pricing regulations in an environment rife with base erosion and proﬁt 
@@ -69,8 +69,7 @@ get_header();
                             dolore magna aliquam erat volutpat. Ut wisi umsan et iusto odio dignissim qui blandit prae
                         </p> -->
                     </div>
-                    <?php endwhile; ?>
-					<?php endif; ?>
+                    
                     <div id="share-box">
                         <button id="share-btn">
                           <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/share.svg" alt="share-icon">
@@ -98,6 +97,8 @@ get_header();
                 </div>
             </div>
         </div>
+        <?php endwhile; ?>
+					<?php endif; ?>
         <!-- end details section -->
     </div>
     <?php get_footer(); ?>
