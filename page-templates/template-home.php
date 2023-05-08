@@ -29,6 +29,8 @@ get_header();
                             <div class="banner-content-blog">
                                 <h1><?php echo $banner_heading;?></h1>
                                 <strong><?php  echo $banner_subheading;?></strong>
+                                <h2>hello world</h2>
+                                <p>first learning process</p>
                             </div>
                 </div>
                 </div>
