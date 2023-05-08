@@ -18,7 +18,7 @@ function add_theme_scripts() {
     
 
      }
-     elseif(is_page_template("page-templates/template-blog.php")){
+     elseif(is_page_template("page-templates/template-blog.php") || is_singular('post')){
         wp_enqueue_style( 'news-style', get_template_directory_uri() . '/css/main.css',false, null,'all');
         wp_enqueue_style( 'news-body-style', get_template_directory_uri() . '/css/news.min.css',false, null,'all');
 
