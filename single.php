@@ -17,7 +17,7 @@ get_header();
         <div class="news-details-section">
             <div class="container share-wrap">
                 <div class="back-btn">
-                    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">BACK TO NEWS</a>
+                    <a href="<?php echo get_permalink('410' ); ?>">BACK TO NEWS</a>
                 </div>
                 <div class="news-details-wrap">
                     <div class="news-img">
