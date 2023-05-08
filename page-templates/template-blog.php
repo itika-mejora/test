@@ -20,7 +20,7 @@ get_header();
                 </div>
                
                   <?php
-					$args = array(
+					$wp_query = array(
                    'post_type' => 'post',
                    'posts_per_page' => 4);
                     query_posts($args);
