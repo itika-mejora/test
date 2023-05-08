@@ -23,24 +23,7 @@
                     <div class="footer-right">
 
                     <?php dynamic_sidebar( 'footer-right-widget' ); ?>   
-                        <!-- <div class="footer-contact-wrap">
-                         -->
-                            <!-- <div class="address contact-blog">
-                                <h6>OUR OFFICES</h6>
-                                <p>Address line 1, Address line 2,68974, Limassol, Cyprus</p>
-                            </div>
-                            <div class="contact contact-blog">
-                                <h6>OUR OFFICES</h6>
-                                <ul class="contact-list">
-                                    <li>
-                                        <a href="mailto:info@reyglobal.com">info@reyglobal.com</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+357 25 785 965">+357 25 785 965</a>
-                                    </li>
-                                </ul>
-                            </div> -->
-                        <!-- </div> -->
+                        
                       
                     </div>
                     <?php endif;?>
@@ -50,18 +33,7 @@
             <div class="footer-social-contact">
             <?php if ( is_active_sidebar( 'footer-social-widget' )) : ?>
             <?php dynamic_sidebar( 'footer-social-widget' ); ?>  
-                <!-- <ul class="social-media-list">
-                    <li>
-                        <a href="#!">
-                            <img src="images/icons/fb.svg" alt="facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#!">
-                            <img src="images/icons/linkdin.svg" alt="linkdin">
-                        </a>
-                    </li>
-                </ul> -->
+                
                 <?php endif;?>
             </div>
            
