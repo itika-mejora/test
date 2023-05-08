@@ -18,21 +18,19 @@ get_header();
                 <div class="news-wrap-heading">
                     <h2><?php the_field('add_page_title' , 'option'); ?></h2>
                 </div>
-                <?php
-					$wp_query = new WP_Query( array(
-						'post_type' => 'post',
-						'posts_per_page' => 4,
-					));
-					if ($wp_query->have_posts()) :
-				?>
-                <?php
-                    while ($wp_query->have_posts()) : $wp_query->the_post();
-                    $news_id = $wp_query -> id;
-                ?>
+               
+
                 <div class="news-blog">
+                <?php
+					$args = array(
+                   'post_type' => 'post',
+                   'posts_per_page' => 4,);
+                    query_posts($args);
+                    if (have_posts()) : while (have_posts()) : the_post();
+                    $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'blog-thumb'); ?>
                     <div class="news-left">
                         <a href="<?php the_permalink(); ?>">
-                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/news/news.jpg" alt="news-img">
+                        <img src="<?php echo $url[0];?>" alt="news-img">
                         </a>
                     </div>
                     <div class="news-right">
@@ -41,7 +39,7 @@ get_header();
                             <h5><?php the_title(); ?></h5>
                         </a>
                         <div class="news-content">
-                            <p><?php the_post_thumbnail('news-thumb'); ?></p>
+                            <p><?php echo get_the_excerpt();?></p>
                         </div>
                         <div class="read-more">
                             <a href="news-details.html">Read <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/arrow.svg" alt="icon"></a>
