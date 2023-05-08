@@ -13,14 +13,14 @@ function add_theme_scripts() {
     } 
      elseif(is_page_template("page-templates/template-citizenship.php") ||is_single() && 'post_type' == get_post_type()  ){
          wp_enqueue_style( 'citizen-style', get_template_directory_uri() . '/css/main.css',false, null,'all');
-         wp_enqueue_style( 'citizen-style', get_template_directory_uri() . 'css/style.css',false, null,'all');
+         wp_enqueue_style( 'citizen-style', get_template_directory_uri() . '/css/style.css',false, null,'all');
 
     
 
      }
      elseif(is_page_template("page-templates/template-blog.php")  ){
         wp_enqueue_style( 'citizen-style', get_template_directory_uri() . '/css/main.css',false, null,'all');
-        wp_enqueue_style( 'citizen-style', get_template_directory_uri() . 'css/style.css',false, null,'all');
+        wp_enqueue_style( 'citizen-style', get_template_directory_uri() . '/css/news.css',false, null,'all');
 
    
 
