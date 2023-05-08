@@ -56,6 +56,7 @@ get_header();
                 <a href="javascript:void(0);" ><?php _e( 'LOAD MORE', 'text_domain' ); ?></a>
                     
                 </div>
+                <?php endif;?>
             </div>
         </duv>
         <!-- end news section -->
