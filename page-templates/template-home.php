@@ -26,11 +26,18 @@ get_header();
                   
                 <div class="container">
                 <div class="banner-content">
-                    <p>!!!!!!!!</p>
+                   
                             <div class="banner-content-blog">
                                 <h1><?php echo $banner_heading;?></h1>
                                 <strong><?php  echo $banner_subheading;?></strong>
-                                
+                                <h2>hello world</h2>
+                                <p>Lorem ipsum dolor sit amet 
+                                    consectetur adipisicing elit.
+                                     Odit accusamus debitis repudiandae,
+                                      ipsa, fugiat odio est possimus et nobis
+                                       aut aliquam error eum molestiae laudantium
+                                        reiciendis adipisci, quasi fugit animi!
+                                </p>
                             </div>
                 </div>
                 </div>
