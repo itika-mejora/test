@@ -21,7 +21,7 @@ get_header();
                 <div class="news-blog">
                     <div class="news-left">
                         <a href="news-details.html">
-                        <a href="news-details.html">Read <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/arrow.svg" alt="icon"></a>
+                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/news/news.jpg" alt="news-img">
                         </a>
                     </div>
                     <div class="news-right">
