@@ -22,7 +22,7 @@ get_header();
                   <?php
 					$args = array(
                    'post_type' => 'post',
-                   'posts_per_page' => 4,);
+                   'posts_per_page' => 4);
                     query_posts($args);
                     if (have_posts()) : while (have_posts()) : the_post();
                     $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'blog-thumb'); 
