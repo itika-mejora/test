@@ -11,21 +11,25 @@ get_header();
         <!-- end banner section -->
 
         <!-- news details section -->
+        
         <div class="news-details-section">
             <div class="container share-wrap">
                 <div class="back-btn">
-                    <a href="news.html">BACK TO NEWS</a>
+                    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">BACK TO NEWS</a>
                 </div>
                 <div class="news-details-wrap">
                     <div class="news-img">
-                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/news/news-details.jpg" alt="news-details">
+                        <img src="<?php the_post_thumbnail('full'); ?>" alt="news-details">
                     </div>
                     <div class="news-name">
-                        <strong class="date">23 Nov 2021</strong>
-                        <h1>Multinational Enterprises and Tax Administrations: <br>CYPRUS Intends to Espouse OECD Transfer Pricing Guidelines </h1>
+                        <strong class="date"><?php the_time( 'd.m.Y' ); ?></strong>
+                        <h1><?php the_title(); ?></h1>
                     </div>
+                    <?php if ( have_posts() ) : ?>
+					<?php while ( have_posts() ) : the_post(); ?>
                     <div class="news-content-text">
-                        <p>Cyprus is mulling the enabling of transfer pricing regulations in an environment rife with base erosion and proﬁt 
+                    <?php the_content(); ?>
+                        <!-- <p>Cyprus is mulling the enabling of transfer pricing regulations in an environment rife with base erosion and proﬁt 
                             shifting. Read on to ﬁnd out about the proposed Transfer Pricing legislation of 2021.  
                         </p>
                         <h2>H2 Title</h2>
@@ -63,8 +67,10 @@ get_header();
                         <p>
                             Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
                             dolore magna aliquam erat volutpat. Ut wisi umsan et iusto odio dignissim qui blandit prae
-                        </p>
+                        </p> -->
                     </div>
+                    <?php endwhile; ?>
+					<?php endif; ?>
                     <div id="share-box">
                         <button id="share-btn">
                           <img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/share.svg" alt="share-icon">
