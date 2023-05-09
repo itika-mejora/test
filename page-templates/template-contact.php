@@ -19,7 +19,7 @@ get_header();
             <div class="container">
                 <div class="contact-us-container">
                     <div class="contact-us-heading">
-                        <h2>CONTACT US</h2>
+                        <h2><?php the_title(); ?></h2>
                     </div>
                     <div class="row">
                         <div class="blog-width-50">
@@ -30,17 +30,17 @@ get_header();
                                 <div class="contact-blog-content">
                                     <ul class="address-line">
                                         <li>
-                                            <strong class="icon"><img src="images/icons/map.svg"></strong>
+                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
                                             <h5>CYPRUS - HEADQUARTERS</h5>
                                             <p>Address line 1, Address line 2,68974, Limassol, Cyprus</p>
                                         </li>
                                         <li>
-                                            <strong class="icon"><img src="images/icons/map.svg"></strong>
+                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
                                             <h5>MALTA</h5>
                                             <p>Address line 1, Address line 2,68974, Malta</p>
                                         </li>
                                         <li>
-                                            <strong class="icon"><img src="images/icons/map.svg"></strong>
+                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
                                             <h5>DUBAI</h5>
                                             <p>Address line 1, Address line 2,68974, Dubai, UAE</p>
                                         </li>
