@@ -27,7 +27,7 @@ function add_theme_scripts() {
 
     }
     elseif(is_page_template("page-templates/template-contact.php")){
-        wp_enqueue_style( 'contact-style', get_template_directory_uri() . '/css/main.css',false, null,'all');
+       
         wp_enqueue_style( 'contact-style', get_template_directory_uri() . '/css/contact.min.css',false, null,'all');
     
         }
