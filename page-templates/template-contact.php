@@ -21,17 +21,17 @@ get_header();
                                 <div class="contact-blog-content">
                                     <ul class="address-line">
                                         <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
+                                            <strong class="icon"><img src="images/icons/map.svg"></strong>
                                             <h5>CYPRUS - HEADQUARTERS</h5>
                                             <p>Address line 1, Address line 2,68974, Limassol, Cyprus</p>
                                         </li>
                                         <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
+                                            <strong class="icon"><img src="images/icons/map.svg"></strong>
                                             <h5>MALTA</h5>
                                             <p>Address line 1, Address line 2,68974, Malta</p>
                                         </li>
                                         <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
+                                            <strong class="icon"><img src="images/icons/map.svg"></strong>
                                             <h5>DUBAI</h5>
                                             <p>Address line 1, Address line 2,68974, Dubai, UAE</p>
                                         </li>
@@ -45,11 +45,11 @@ get_header();
                                 <div class="contact-blog-content">
                                     <ul class="address-line">
                                         <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/mail.svg"></strong>
+                                            <strong class="icon"><img src="images/icons/mail.svg"></strong>
                                             <a href="mailto:info@reyglobal.com">info@reyglobal.com</a>
                                         </li>
                                         <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/call.svg"></strong>
+                                            <strong class="icon"><img src="images/icons/call.svg"></strong>
                                             <ul class="number-id">
                                                 <li>
                                                     <strong class="country-name">
