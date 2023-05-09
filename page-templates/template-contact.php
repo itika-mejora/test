@@ -55,7 +55,7 @@ get_header();
                                     <ul class="address-line">
                                         
                                         <li>
-                                            <strong class="icon"><img src="<?php echo the_field('contact_blog_heading');?>"></strong>
+                                            <strong class="icon"><img src="<?php echo the_field('contact_email_icon');?>"></strong>
                                             <a href="mailto:<?php echo the_field('contact_email');?>"><?php echo the_field('contact_email');?></a>
                                         </li>
                                         <li>
