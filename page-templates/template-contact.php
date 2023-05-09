@@ -6,7 +6,16 @@ get_header();
 ?>
 
 
-<div class="contact-us-section">
+<div class="body-content">
+        <!-- for banner section -->
+        <div class="banner-section-wrap">
+            <div class="specer"></div>
+        </div>
+        <!-- end banner section -->
+
+        
+        <!-- for contact-us section -->
+        <div class="contact-us-section">
             <div class="container">
                 <div class="contact-us-container">
                     <div class="contact-us-heading">
