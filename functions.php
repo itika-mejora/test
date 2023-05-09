@@ -26,7 +26,7 @@ function add_theme_scripts() {
     wp_enqueue_style( 'news-body-style', get_template_directory_uri() . '/css/news.min.css',false, null,'all');
 
     }
-    elseif(is_page_template("page-templates/template-blog.php")){
+    elseif(is_page_template("page-templates/template-contact.php")){
         wp_enqueue_style( 'contact-style', get_template_directory_uri() . '/css/main.css',false, null,'all');
         wp_enqueue_style( 'contact-style', get_template_directory_uri() . '/css/contact.min.css',false, null,'all');
     
