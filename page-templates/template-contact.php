@@ -32,8 +32,9 @@ get_header();
                                 <div class="contact-blog-content">
                                     
                                     <ul class="address-line">
+                                    
                                     <?php if(get_field('contact_details')){
-                                        while(get_sub_field('contact_details')){?>
+                                        while(has_sub_field('contact_details')){?>
                                         <li>
                                             <strong class="icon"><img src="<?php echo get_sub_field('address_icon');?>"></strong>
                                             <h5><?php echo get_sub_field();?></h5>
