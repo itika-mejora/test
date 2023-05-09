@@ -24,26 +24,23 @@ get_header();
                     <div class="row">
                         <div class="blog-width-50">
                             <div class="contact-blog">
+                            <?php if (get_field('contact_heading')) : ?>
                                 <div class="contact-blog-heading">
-                                    <h3>OUR OFFICES</h3>
+                                    <h3><?php the_field('contact_heading'); ?></h3>
                                 </div>
+                                <?php endif;?>
                                 <div class="contact-blog-content">
+                                    
                                     <ul class="address-line">
+                                    <?php if(get_field('contact_details')){
+                                        while(get_sub_field('contact_details')){?>
                                         <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
-                                            <h5>CYPRUS - HEADQUARTERS</h5>
-                                            <p>Address line 1, Address line 2,68974, Limassol, Cyprus</p>
+                                            <strong class="icon"><img src="<?php echo get_sub_field('address_icon');?>"></strong>
+                                            <h5><?php echo get_sub_field();?></h5>
+                                            <?php echo get_sub_field('address_icon');?>
                                         </li>
-                                        <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
-                                            <h5>MALTA</h5>
-                                            <p>Address line 1, Address line 2,68974, Malta</p>
-                                        </li>
-                                        <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/map.svg"></strong>
-                                            <h5>DUBAI</h5>
-                                            <p>Address line 1, Address line 2,68974, Dubai, UAE</p>
-                                        </li>
+                                        <?php } }?>
+                                        
                                     </ul>
                                 </div>
                             </div>
