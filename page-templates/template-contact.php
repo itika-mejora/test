@@ -37,8 +37,8 @@ get_header();
                                         while(has_sub_field('contact_details')){?>
                                         <li>
                                             <strong class="icon"><img src="<?php echo get_sub_field('address_icon');?>"></strong>
-                                            <h5><?php echo get_sub_field();?></h5>
-                                            <?php echo get_sub_field('address_icon');?>
+                                            <h5><?php echo get_sub_field('address_heading');?></h5>
+                                            <?php echo get_sub_field('address_subheading');?>
                                         </li>
                                         <?php } }?>
                                         
