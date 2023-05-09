@@ -59,7 +59,7 @@ get_header();
                                             <a href="mailto:<?php echo the_field('contact_email');?>"><?php echo the_field('contact_email');?></a>
                                         </li>
                                         <li>
-                                            <strong class="icon"><img src="<?php echo the_field('contact_email_icon');?>"></strong>
+                                            <strong class="icon"><img src="<?php echo the_field('call_icon');?>"></strong>
                                             <ul class="number-id">
                                             <?php if(get_field('details_address')){
                                                     while(has_sub_field('details_address')){?>
