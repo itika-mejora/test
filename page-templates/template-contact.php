@@ -53,25 +53,24 @@ get_header();
                                 
                                 <div class="contact-blog-content">
                                     <ul class="address-line">
-                                    <?php if(get_field('details_address')){
-                                        while(has_sub_field('details_address')){?>
                                         
                                         <li>
-                                            <strong class="icon"><img src="<?php echo get_sub_field('blog_address');?>"></strong>
-                                            <a href="mailto:<?php echo get_sub_field('blog_address_contact');?>"><?php echo get_sub_field('blog_address_contact');?></a>
+                                            <strong class="icon"><img src="<?php echo the_field('contact_blog_heading');?>"></strong>
+                                            <a href="mailto:<?php echo the_field('contact_email');?>"><?php echo the_field('contact_email');?></a>
                                         </li>
-                                        <?php } }?>
-                                        <!-- <li>
-                                            <strong class="icon"><img src="contact_email"></strong>
+                                        <li>
+                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/call.svg"></strong>
                                             <ul class="number-id">
-
+                                            <?php if(get_field('details_address')){
+                                                    while(has_sub_field('details_address')){?>
                                                 <li>
                                                     <strong class="country-name">
-                                                        Cyprus:
+                                                    <?php echo get_sub_field('blog_address');?>
                                                     </strong>
-                                                    <a href="tel:+357 25 785 965">+357 25 785 965</a>
+                                                    <a href="<?php echo get_sub_field('blog_address_contacts');?>"><?php echo get_sub_field('blog_address_contact');?></a>
                                                 </li>
-                                                <li>
+                                                  <?php  } }?>
+                                                <!-- <li>
                                                     <strong class="country-name">
                                                         Malta:
                                                     </strong>
@@ -82,9 +81,9 @@ get_header();
                                                         Dubai: 
                                                     </strong>
                                                     <a href="tel:+357 25 785 965">+357 25 785 965</a>
-                                                </li>
+                                                </li> -->
                                             </ul>
-                                        </li> -->
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
