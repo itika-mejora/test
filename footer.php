@@ -10,8 +10,9 @@
                            
                             <?php if ( is_active_sidebar( 'footer-menu-widget' )) : ?>
                             <ul class="footer-menu">
-                            
+                            <li>
                              <?php dynamic_sidebar( 'footer-menu-widget' ); ?>
+                            </li>
                             </ul>
                             <?php endif;?>
                         </div>
