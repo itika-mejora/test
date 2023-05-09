@@ -70,18 +70,7 @@ get_header();
                                                     <a href="tel+<?php echo get_sub_field('blog_address_contacts');?>"><?php echo get_sub_field('blog_address_contact');?></a>
                                                 </li>
                                                   <?php  } }?>
-                                                <!-- <li>
-                                                    <strong class="country-name">
-                                                        Malta:
-                                                    </strong>
-                                                    <a href="tel:+357 25 785 965">+357 25 785 965</a>
-                                                </li>
-                                                <li>
-                                                    <strong class="country-name">
-                                                        Dubai: 
-                                                    </strong>
-                                                    <a href="tel:+357 25 785 965">+357 25 785 965</a>
-                                                </li> -->
+                                                
                                             </ul>
                                         </li>
                                     </ul>
