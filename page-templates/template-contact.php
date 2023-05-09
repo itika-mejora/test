@@ -46,11 +46,11 @@ get_header();
                                 </div>
                             </div>
                             <div class="contact-blog">
-                                <?php if(get_field('contact_blog_heading'));?>
+                                
                                 <div class="contact-blog-heading">
                                     <h3><?php echo the_field('contact_blog_heading');?></h3>
                                 </div>
-                                <?php endif;?>
+                                
                                 <div class="contact-blog-content">
                                     <ul class="address-line">
                                         
