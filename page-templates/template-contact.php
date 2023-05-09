@@ -53,14 +53,18 @@ get_header();
                                 
                                 <div class="contact-blog-content">
                                     <ul class="address-line">
+                                    <?php if(get_field('details_address')){
+                                        while(has_sub_field('details_address')){?>
                                         
                                         <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/mail.svg"></strong>
-                                            <a href="mailto:info@reyglobal.com">info@reyglobal.com</a>
+                                            <strong class="icon"><img src="<?php echo get_sub_field('blog_address');?>"></strong>
+                                            <a href="mailto:<?php echo get_sub_field('blog_address_contact');?>"><?php echo get_sub_field('blog_address_contact');?></a>
                                         </li>
-                                        <li>
-                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/call.svg"></strong>
+                                        <?php } }?>
+                                        <!-- <li>
+                                            <strong class="icon"><img src="contact_email"></strong>
                                             <ul class="number-id">
+
                                                 <li>
                                                     <strong class="country-name">
                                                         Cyprus:
@@ -80,7 +84,7 @@ get_header();
                                                     <a href="tel:+357 25 785 965">+357 25 785 965</a>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
