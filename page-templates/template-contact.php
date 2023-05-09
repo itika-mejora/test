@@ -67,7 +67,7 @@ get_header();
                                                     <strong class="country-name">
                                                     <?php echo get_sub_field('blog_address');?>
                                                     </strong>
-                                                    <a href="tel:+<?php echo get_sub_field('blog_address_contacts');?>"><?php echo get_sub_field('blog_address_contact');?></a>
+                                                    <a href="tel+<?php echo get_sub_field('blog_address_contacts');?>"><?php echo get_sub_field('blog_address_contact');?></a>
                                                 </li>
                                                   <?php  } }?>
                                                 <!-- <li>
