@@ -46,11 +46,14 @@ get_header();
                                 </div>
                             </div>
                             <div class="contact-blog">
+                                <?php if(get_field('contact_blog_heading'));?>
                                 <div class="contact-blog-heading">
-                                    <h3>TALK TO US</h3>
+                                    <h3><?php echo the_field('contact_blog_heading');?></h3>
                                 </div>
+                                <?php endif;?>
                                 <div class="contact-blog-content">
                                     <ul class="address-line">
+                                        
                                         <li>
                                             <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/mail.svg"></strong>
                                             <a href="mailto:info@reyglobal.com">info@reyglobal.com</a>
@@ -87,30 +90,7 @@ get_header();
                                 <div class="contact-blog-content">
                                     <div class="form-group-wrap">                                        
                                         <h5>SEND US A MESSAGE</h5>
-                                        <div class="input-wrap">
-                                            <input type="text" name="first-name" placeholder="Name">
-                                        </div>
-                                        <div class="input-wrap">
-                                            <input type="text" name="last-name" placeholder="Surname">
-                                        </div>
-                                        <div class="input-wrap">
-                                            <input type="email" name="email" placeholder="Email">
-                                        </div>
-                                        <div class="input-wrap">
-                                            <select name="country" id="country">
-                                                <option value="argentina">Argentina</option>
-                                                <option value="belgium">Belgium</option>
-                                                <option value="cambodia">Cambodia</option>
-                                                <option value="denmark">Denmark</option>
-                                                <option value="india">India</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-wrap">
-                                            <textarea name="message" placeholder="Message"></textarea>
-                                        </div>
-                                        <div class="input-wrap">
-                                            <button type="button">SUBMIT MESSAGE</button>
-                                        </div>
+                                        <?php echo do_shortcode(get_field('Short Code')); ?>
                                     </div>
                                 </div>
                             </div>
