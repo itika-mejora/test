@@ -54,11 +54,11 @@ get_header();
                                 <div class="contact-blog-content">
                                     <ul class="address-line">
                                         <li>
-                                            <strong class="icon"><img src="images/icons/mail.svg"></strong>
+                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/mail.svg"></strong>
                                             <a href="mailto:info@reyglobal.com">info@reyglobal.com</a>
                                         </li>
                                         <li>
-                                            <strong class="icon"><img src="images/icons/call.svg"></strong>
+                                            <strong class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icons/call.svg"></strong>
                                             <ul class="number-id">
                                                 <li>
                                                     <strong class="country-name">
