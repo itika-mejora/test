@@ -90,7 +90,7 @@ get_header();
                                 <div class="contact-blog-content">
                                     <div class="form-group-wrap">                                        
                                         <h5>SEND US A MESSAGE</h5>
-                                        <?php echo do_shortcode(get_field('Short Code')); ?>
+                                        <?php echo do_shortcode(get_field('short_code')); ?>
                                     </div>
                                 </div>
                             </div>
